@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa de Diseño</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="\resources\styles.css">
+</head>
+<body>
+  <header>
+    <div class="banner">
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html#servicios">Servicios</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    	<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    	<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  
+  <section id="portafolio" class="portafolio">
+  <h2>Nuestro Portafolio</h2>
+  <div class="owl-carousel">
+    <div class="item"><img src="\resources\deer.jpg" alt="Deer"></div>
+    <div class="item"><img src="\resources\tiger.jpg" alt="Tiger"></div>
+    <div class="item"><img src="\resources\parrot.jpg" alt="Parrot"></div>
+    <!-- Agregar más imágenes -->
+  </div>
+</section>
+  
+  <footer>
+    <p>&copy; 2023 Empresa de Diseño. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="\resources\script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+  $(document).ready(function() {
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      autoplay: true, // Activar el autoplay
+      autoplayTimeout: 1000, // Duración de cada slide en milisegundos
+      autoplayHoverPause: true, // Pausar autoplay al pasar el mouse sobre el carrusel
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
